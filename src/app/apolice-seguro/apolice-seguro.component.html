@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apólice de Seguro</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-3 mb-2">
+      <h3>Cálculo - Apólice de Seguro</h3>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome do Segurado</label>
+          <input type="text" class="form-control" id="nome" [(ngModel)]="nome" placeholder="Nome...">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mb-3">
+          <label for="sexo" class="form-label">Sexo</label>
+          <select class="form-select" id="sexo" [(ngModel)]="sexo" placeholder="Sexo...">
+            <option value="F" selected>Feminino</option>
+            <option value="M">Masculino</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="mb-3">
+          <label for="idade" class="form-label">Idade</label>
+          <input type="number" class="form-control" id="idade" [(ngModel)]="idade" placeholder="Idade...">
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="mb-3">
+          <label for="valorAutomovel" class="form-label">Valor Automóvel</label>
+          <input type="text" class="form-control" id="valorAutomovel" [(ngModel)]="valorAutomovel" placeholder="Valor Automóvel...">
+        </div>
+      </div>
+      <div class="col-2" style="margin-top: 32px;">
+        <button type="button" class="btn btn-success" (click)="calcularApolice()">Calcular</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="mb-3">
+          <label for="resultado" class="form-label">Valor da Apólice</label>
+          <input type="email" class="form-control" id="resultado" [(ngModel)]="resultadoApolice" readonly disabled>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

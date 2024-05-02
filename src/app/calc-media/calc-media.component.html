@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcula Média</title>
+</head>
+<body>
+    <div class="container">
+      <div class="row mt-3 mb-2">
+        <h3>Calcula Média - FACENS</h3>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="mb-3">
+            <label for="ac1" class="form-label">AC1</label>
+            <input type="number" class="form-control" id="ac1" [(ngModel)]="ac1" placeholder="Nota AC1...">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="mb-3">
+            <label for="ac2" class="form-label">AC2</label>
+            <input type="number" class="form-control" id="ac2" [(ngModel)]="ac2" placeholder="Nota AC2...">
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="mb-3">
+            <label for="ag" class="form-label">AG</label>
+            <input type="number" class="form-control" id="ag" [(ngModel)]="ag" placeholder="Nota AG...">
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="mb-3">
+            <label for="af" class="form-label">AF</label>
+            <input type="number" class="form-control" id="af" [(ngModel)]="af" placeholder="Nota AF...">
+          </div>
+        </div>
+        <div class="col-2" style="margin-top: 32px;">
+          <button type="button" class="btn btn-success" (click)="calcularMedia()">Calcular</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="mb-3">
+            <label for="resultado" class="form-label">Resultado</label>
+            <input type="email" class="form-control" id="resultado" [(ngModel)]="resultado">
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

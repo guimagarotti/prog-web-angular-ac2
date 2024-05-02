@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Aluno</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3 mb-2">
+            <h3>Cadastro Aluno - FACENS</h3>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="mb-3">
+                    <label for="ra" class="form-label">RA</label>
+                    <input type="number" maxlength="6" class="form-control" id="ra" [(ngModel)]="ra"
+                        placeholder="RA...">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" [(ngModel)]="nome" placeholder="Nome...">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" [(ngModel)]="email" placeholder="Email...">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="mb-3">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="celular" [(ngModel)]="celular" placeholder="Celular...">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <h3>Aluno Cadastrado:</h3>
+                    <p>RA: {{ ra }}</p>
+                    <p>Nome: {{ nome }}</p>
+                    <p>Email: {{ email }}</p>
+                    <p>Celular: {{ celular }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="mb-3">
+                    <button type="button" class="btn btn-success" (click)="cadastraAluno()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
